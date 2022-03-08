@@ -1,34 +1,26 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        //strings
-        String username = "Alexander ";
-        username += "Salgado ";
-        username += "Velazquez";
-        System.out.println(username);
-        //char
-        char myChar = 'z';
-        System.out.println("For char: " + myChar);
+        int feeMonth = 150;
+        int month = 12;
+        month -= 5;
+        feeMonth *= month;
+        System.out.println(feeMonth);
 
-        //bool
-        boolean premiumAccount = true;
-        boolean freeAccount = false;
-        System.out.println("is premium: " + premiumAccount + ". Is free: " + freeAccount);
+        int users = 500;
+        users /= 3;
+        System.out.println(users);
 
-        //integers
-        byte age = 127;
-        short limitBalance  = 32767;
-        int currentBalance = 2400; //default
-        long bankBalance = 9223372036854775807L;
-        System.out.println("Age: " + age + " limit user: " + limitBalance);
-        System.out.println("Current user balance: " + currentBalance + "bank: " + bankBalance);
+        int income = 321;
+        income %= 2;
+        System.out.println(income);
 
-        //float
-        double commision = 2.9d;
-        float clientDeposit = 19.8F;
-        System.out.println("Bank commision: " + commision + "clientDeposit " + clientDeposit);
+        //postfijo
+        int currentIncome = 5;
+        int result = 100 + currentIncome++;
+        System.out.println("result: " + result + " Income: " + currentIncome);
 
-
-        //for Java 10 ^ can use "var" keyword
-        // var result = currentBalance*0.16
+        //prefijo
+        result = 100 + ++currentIncome;
+        System.out.println("result: " + result + " Income: " + currentIncome);
     }
 }
