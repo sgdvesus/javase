@@ -1,26 +1,35 @@
 public class HelloWorld {
     public static void main(String[] args) {
-        int feeMonth = 150;
-        int month = 12;
-        month -= 5;
-        feeMonth *= month;
-        System.out.println(feeMonth);
+        double n = 4.1;
+        System.out.println(Math.ceil(n));
+        System.out.println(Math.floor(n));
+        System.out.println(Math.pow(n, 2));
+        System.out.println(Math.max(4, 6));
+        System.out.println(Math.sqrt(n));
+        System.out.println(Math.PI);
 
-        int users = 500;
-        users /= 3;
-        System.out.println(users);
+        double annualFee = 30.0;
+        double months = 12.0;
+        System.out.println(annualFee/months);
 
-        int income = 321;
-        income %= 2;
-        System.out.println(income);
+        //Stimated
+        System.out.println((int) annualFee);
+        int a = 30;
+        int b = 12;
+        //explicit cast 2.5
+        System.out.println((double) a/b);
 
-        //postfijo
-        int currentIncome = 5;
-        int result = 100 + currentIncome++;
-        System.out.println("result: " + result + " Income: " + currentIncome);
+        //implicit cast 2.0
+        double c = a/b;
+        System.out.println(c);
 
-        //prefijo
-        result = 100 + ++currentIncome;
-        System.out.println("result: " + result + " Income: " + currentIncome);
+        //int > char, no need cast
+        char fora = 's';
+        int forI = fora;
+        System.out.println(forI);
+
+        // char > short, need cast
+        short forS = (short) fora;
+        System.out.println(forS);
     }
 }
